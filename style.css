@@ -1,0 +1,261 @@
+*{
+    background-color: rgb(14, 14, 148);
+    font-family: sans-serif;
+}
+main{
+    position: relative;
+    top: 30px;
+}
+#Name_and_Menu{
+    display: flex;
+    gap: 60rem;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    height: 70px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(13, 13, 99);
+    z-index: 1000;
+    width: 100%;
+}
+#Menu{
+    display: flex;
+    width: 800px;
+    justify-content: space-evenly;
+    background-color: rgb(13, 13, 99);
+    position: absolute;
+    right: 0;
+}
+#Menu span:hover{
+    cursor: pointer;
+}
+#Information{
+    margin-top: 50px;
+    height: 700px;
+    padding-top: 20px;
+    display: flex;
+    width: 50%;
+}
+#photo{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: absolute;
+    right: 30px;
+    overflow: hidden;
+}
+#photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#Intro{
+    width: fit-content;
+    color: white;
+    position: relative;
+    left: 100px;
+}
+#CV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+    left: 100px;
+    top: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: aqua;
+    color: black;
+    border-radius: 10px;
+    
+}
+#About{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    gap: 8rem;
+    position: relative;
+    top: 100px;
+}
+#another_photo{
+    width: 400px;
+    height: 500px;
+    background-color: aqua;
+    position: relative;
+    top: 200px;
+    left: 90px;
+    overflow: hidden;
+}
+#another_photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#About_Me{
+    position: relative;
+    top: 200px;
+    left: 100px;
+    width: 800px;
+    color: white;
+    height: fit-content;
+}
+#ReadMore{
+    width: 150px;
+    height: 50px;
+    background-color: aqua;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+#ReadMore:hover{
+    cursor: pointer;
+}
+#Services{
+    width: 100%;
+    position: relative;
+    top: 200px;
+    padding-top: 100px;
+}
+#my_services{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#Web-Dev{
+    width: 453px;
+    height: 500px;
+    background-color: rgb(11, 11, 168);
+    border-radius: 40px;
+}
+#UI-UX{
+    width: 453px;
+    height: 500px;
+    background-color: rgb(11, 11, 168);
+    border-radius: 40px;
+}
+#App-Dev{
+    width: 453px;
+    height: 500px;
+    background-color: rgb(11, 11, 168);
+    border-radius: 40px;
+}
+#Web-Dev img{
+    width: 100%;
+    object-fit: cover;
+}
+#UI-UX img{
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+#App-Dev img{
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+#projects{
+    background: var(--snd-bg-color);
+    color: white;
+    position: relative;
+    top: 300px;
+    padding-top: 100px;
+}
+#holder{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+
+}
+.my_projects{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.my_projects img{
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+    height: 400px;
+}
+
+.my_projects:hover img{
+    transform: scale(1.1);
+}
+.my_projects #layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1) var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    padding-left: 0;
+    padding-right: 0;
+}
+.my_projects:hover #layer{
+    transform: translateY(0);
+
+}
+.my_projects #layer h4{
+    font-size: 3rem;
+}
+.my_projects #layer p{
+    font-size: 1.3rem;
+}
+#Contact{
+    position: relative;
+    top: 700px;
+    
+}
+#Details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+#Details input{
+    text-decoration: none;
+    border: 1px solid black;
+    height: 50px;
+}
+#message input::placeholder{
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    color: grey;
+}
+#message input{
+    font-size: 25px;
+    position: relative;
+    top: 0;
+}
+#Details ::placeholder{
+    color: grey;
+}
+#Details input{
+    color: white;
+    font-size: 25px;
+}
+
+#send:hover{
+    cursor: pointer;
+}
